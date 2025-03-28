@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		088A62274BFD3645C194E3AE /* TelemetryDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E495B9A2DBAC358495C12BA /* TelemetryDataView.swift */; };
+		11CF714AC13644E31557DDD3 /* video_processor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A198ACB5E631FE1A9CBC4 /* video_processor.mm */; };
+		1BA0E39A04C8D30A2CEF1CAE /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF0A918A5B68751630608 /* VideoPreviewView.swift */; };
+		3A77C073A9FECE9A756A973B /* mavlink_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B53AF5572EAB04F5F97034B /* mavlink_handler.cpp */; };
+		4F7F1EE827C371A3BE55D857 /* PixelPilotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCF46084245DDD90094FE0 /* PixelPilotApp.swift */; };
+		573B8F21C5A6A6A9DF9EA450 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25CAC5E90A05835DAC2343 /* MainView.swift */; };
+		80F2D20FDD1A5A3F469BDF77 /* telemetry_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBDD5507FB76CADF5A8B5920 /* telemetry_handler.cpp */; };
+		DF16E665E31F26757CEC1D7A /* PixelPilotBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6354913356847686ED0C82A8 /* PixelPilotBridge.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0360F22346920C8D2EF23BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		12ACF0A918A5B68751630608 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
+		2E495B9A2DBAC358495C12BA /* TelemetryDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryDataView.swift; sourceTree = "<group>"; };
+		3228A391C30304E971B172B2 /* telemetry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = telemetry.hpp; sourceTree = "<group>"; };
+		3B53AF5572EAB04F5F97034B /* mavlink_handler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mavlink_handler.cpp; sourceTree = "<group>"; };
+		4AE9C6AE3BAB48B18B4EB144 /* PixelPilot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PixelPilot-Bridging-Header.h"; sourceTree = "<group>"; };
+		6354913356847686ED0C82A8 /* PixelPilotBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PixelPilotBridge.mm; sourceTree = "<group>"; };
+		7BC14E4E687D011FC9CC91B5 /* mavlink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mavlink.h; sourceTree = "<group>"; };
+		8D25CAC5E90A05835DAC2343 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9A5A198ACB5E631FE1A9CBC4 /* video_processor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = video_processor.mm; sourceTree = "<group>"; };
+		AD8141B5CCC216AE25C19F6D /* PixelPilot.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PixelPilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDD5507FB76CADF5A8B5920 /* telemetry_handler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = telemetry_handler.cpp; sourceTree = "<group>"; };
+		BCD137FDD6225F1E77635697 /* video_processor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = video_processor.hpp; sourceTree = "<group>"; };
+		BDBCF46084245DDD90094FE0 /* PixelPilotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelPilotApp.swift; sourceTree = "<group>"; };
+		D2CB4733BB98C89EEFFCF3FB /* PixelPilotBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixelPilotBridge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2CC2DAEB8C6CDC1D307BF852 /* CppWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB4733BB98C89EEFFCF3FB /* PixelPilotBridge.h */,
+				6354913356847686ED0C82A8 /* PixelPilotBridge.mm */,
+			);
+			path = CppWrapper;
+			sourceTree = "<group>";
+		};
+		35E8EED848B9CB524298E056 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BDBCF46084245DDD90094FE0 /* PixelPilotApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B7E00CC6526D08AFF56D2E3 = {
+			isa = PBXGroup;
+			children = (
+				DA939B0B1E55CF6DDFE7B161 /* PixelPilot */,
+				57CBC86CAB876FFE3432C5B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BF6EF8D396E8CE166603A27 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2DAEB8C6CDC1D307BF852 /* CppWrapper */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		57CBC86CAB876FFE3432C5B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD8141B5CCC216AE25C19F6D /* PixelPilot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE632723A2E456E17207E08 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9EB2DAF7C1109B72681F37BB /* mavlink */,
+				D5EDEA79F181BCBA22AF1361 /* videonative */,
+				FA648740133DE0ADDB1F6292 /* wfbngrtl8812 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7CD8A59C94D8B9F7511B0BC1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3B53AF5572EAB04F5F97034B /* mavlink_handler.cpp */,
+				BBDD5507FB76CADF5A8B5920 /* telemetry_handler.cpp */,
+				9A5A198ACB5E631FE1A9CBC4 /* video_processor.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9E0A8AE66A4E17855F0BF82D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D25CAC5E90A05835DAC2343 /* MainView.swift */,
+				2E495B9A2DBAC358495C12BA /* TelemetryDataView.swift */,
+				12ACF0A918A5B68751630608 /* VideoPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EB2DAF7C1109B72681F37BB /* mavlink */ = {
+			isa = PBXGroup;
+			children = (
+				7BC14E4E687D011FC9CC91B5 /* mavlink.h */,
+			);
+			path = mavlink;
+			sourceTree = "<group>";
+		};
+		B3B885E9FE68EC202EB6D1C7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7AE632723A2E456E17207E08 /* include */,
+				7CD8A59C94D8B9F7511B0BC1 /* src */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D5EDEA79F181BCBA22AF1361 /* videonative */ = {
+			isa = PBXGroup;
+			children = (
+				BCD137FDD6225F1E77635697 /* video_processor.hpp */,
+			);
+			path = videonative;
+			sourceTree = "<group>";
+		};
+		DA939B0B1E55CF6DDFE7B161 /* PixelPilot */ = {
+			isa = PBXGroup;
+			children = (
+				0360F22346920C8D2EF23BD3 /* Info.plist */,
+				4AE9C6AE3BAB48B18B4EB144 /* PixelPilot-Bridging-Header.h */,
+				35E8EED848B9CB524298E056 /* App */,
+				4BF6EF8D396E8CE166603A27 /* Bridging */,
+				B3B885E9FE68EC202EB6D1C7 /* Shared */,
+				9E0A8AE66A4E17855F0BF82D /* Views */,
+			);
+			path = PixelPilot;
+			sourceTree = "<group>";
+		};
+		FA648740133DE0ADDB1F6292 /* wfbngrtl8812 */ = {
+			isa = PBXGroup;
+			children = (
+				3228A391C30304E971B172B2 /* telemetry.hpp */,
+			);
+			path = wfbngrtl8812;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E72DBDAE5AEA24E0C7E27CC /* PixelPilot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5C8B9708C33DC6C521798E2 /* Build configuration list for PBXNativeTarget "PixelPilot" */;
+			buildPhases = (
+				E0F00609D5665990F35109B9 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelPilot;
+			productName = PixelPilot;
+			productReference = AD8141B5CCC216AE25C19F6D /* PixelPilot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C59F544832B599C483A3FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3E72DBDAE5AEA24E0C7E27CC = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 1E41202958E0FD812BB3D32B /* Build configuration list for PBXProject "PixelPilot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4B7E00CC6526D08AFF56D2E3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E72DBDAE5AEA24E0C7E27CC /* PixelPilot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0F00609D5665990F35109B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573B8F21C5A6A6A9DF9EA450 /* MainView.swift in Sources */,
+				4F7F1EE827C371A3BE55D857 /* PixelPilotApp.swift in Sources */,
+				DF16E665E31F26757CEC1D7A /* PixelPilotBridge.mm in Sources */,
+				088A62274BFD3645C194E3AE /* TelemetryDataView.swift in Sources */,
+				1BA0E39A04C8D30A2CEF1CAE /* VideoPreviewView.swift in Sources */,
+				3A77C073A9FECE9A756A973B /* mavlink_handler.cpp in Sources */,
+				80F2D20FDD1A5A3F469BDF77 /* telemetry_handler.cpp in Sources */,
+				11CF714AC13644E31557DDD3 /* video_processor.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		66373827909C40492EF07284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		853F4162D9AD0739EC2571E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/PixelPilot",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/PixelPilot/Shared/include",
+					"$(SRCROOT)/../app/src/main/cpp",
+				);
+				INFOPLIST_FILE = PixelPilot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openipc.pixelpilot;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PixelPilot/PixelPilot-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "PixelPilot-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10B92E6B41198193A1CE266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E88250CA4E1BC0DBA0A7B8A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/PixelPilot",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/PixelPilot/Shared/include",
+					"$(SRCROOT)/../app/src/main/cpp",
+				);
+				INFOPLIST_FILE = PixelPilot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++17",
+					"-fmodules",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openipc.pixelpilot;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PixelPilot/PixelPilot-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "PixelPilot-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E41202958E0FD812BB3D32B /* Build configuration list for PBXProject "PixelPilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66373827909C40492EF07284 /* Debug */,
+				A10B92E6B41198193A1CE266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5C8B9708C33DC6C521798E2 /* Build configuration list for PBXNativeTarget "PixelPilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853F4162D9AD0739EC2571E6 /* Debug */,
+				E88250CA4E1BC0DBA0A7B8A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C59F544832B599C483A3FBA /* Project object */;
+}

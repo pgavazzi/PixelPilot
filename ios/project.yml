@@ -1,0 +1,70 @@
+name: PixelPilot
+options:
+  bundleIdPrefix: com.openipc
+  deploymentTarget:
+    iOS: 16.0
+targets:
+  PixelPilot:
+    type: application
+    platform: iOS
+    sources:
+      - PixelPilot
+      - PixelPilot/Shared/src
+    settings:
+      base:
+        INFOPLIST_FILE: PixelPilot/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.openipc.pixelpilot
+        DEVELOPMENT_TEAM: "" # Add your team ID here
+        ENABLE_PREVIEWS: YES
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: 1,2
+        SUPPORTED_PLATFORMS: iphoneos iphonesimulator
+        CLANG_CXX_LANGUAGE_STANDARD: c++17
+        CLANG_ENABLE_MODULES: YES
+        SWIFT_OPTIMIZATION_LEVEL: -Onone
+        SWIFT_OBJC_BRIDGING_HEADER: PixelPilot/PixelPilot-Bridging-Header.h
+        SWIFT_OBJC_INTERFACE_HEADER_NAME: PixelPilot-Swift.h
+        DEFINES_MODULE: YES
+        SWIFT_INSTALL_OBJC_HEADER: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+        HEADER_SEARCH_PATHS: 
+          - "$(SRCROOT)/PixelPilot/Shared/include"
+          - "$(SRCROOT)/../app/src/main/cpp"
+        OTHER_CPLUSPLUSFLAGS: 
+          - "-std=c++17"
+          - "-fmodules"
+        FRAMEWORK_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/PixelPilot"
+        OTHER_LDFLAGS:
+          - "-framework"
+          - "Metal"
+          - "-framework"
+          - "MetalKit"
+        COMPILER_INDEX_STORE_ENABLE: NO
+        GCC_OPTIMIZATION_LEVEL: 0
+        CLANG_OPTIMIZATION_PROFILE_FILE: ""
+    frameworks:
+      - Metal
+      - MetalKit
+    info:
+      path: PixelPilot/Info.plist
+      properties:
+        LSRequiresIPhoneOS: true
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight 
